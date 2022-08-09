@@ -1,0 +1,138 @@
+.weather-app{
+  margin: 40px auto;
+  display: block;
+  box-shadow: 6px 6px 20px rgb(0 0 0 / 20%);
+  color: white;
+  font-family: Montserrat;
+}
+.overview-right{
+  display: block;
+  background-color: rgb(75, 75, 132); 
+  width: 640px;
+  padding: 50px 50px 10px 50px;
+  }
+
+.overview-left{
+  display: block;
+  background-color: rgb(48, 48, 123); 
+  width: 320px;
+  padding: 50px 30px 10px 30px;;
+}
+
+.overview{
+  display: flex;
+}
+  
+.container{
+  max-width: 960px;
+  text-align: center;
+}
+
+.WeatherForecastPreview{
+  width: auto;
+  background-color: rgb(48, 48, 123);
+  font-size: 15px; 
+}
+
+.WeatherForecast{
+  flex-wrap: nowrap;
+}
+
+col{
+  padding-left: 0px;
+  padding-right: 0px;
+  flex-grow: 0;
+}
+  
+ul{
+  list-style-type: none;
+  background-color: rgb(48, 48, 123);
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 10px;
+}
+
+strong{
+  font-size: 40px;
+}
+
+.name-hightlights{
+  font-size: 15px;
+}
+
+.indicator{
+  font-size: 20px;
+}
+
+.forecast-temperature-max{
+  font-weight: bold;
+}
+
+.search-form{
+  font-size: 10px;
+  width: auto;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.form-control{
+  width: 150px;
+}
+
+.search-line{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.btn{
+  width: 50px;
+}
+
+.search-button{
+  width: 100px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.current-button{
+  width: 100px;
+  padding-left: 0px;
+  padding-right: 0px;
+  }
+
+.Today-hightlights{
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.title{
+  font-size: 80px;
+  margin-bottom: 80px;
+  font-family: Orbitron;
+}
+
+.status{
+  font-size: 30px;
+  margin-bottom: 60px;
+}
+
+h2:first-letter{
+  text-transform: capitalize;
+}
+
+.scale{
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 15px;
+}
+
+.weather-forecast{
+  background-color: rgb(48, 48, 123);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.weather-forecast-temperature-max{
+  font-weight: bold;
+}

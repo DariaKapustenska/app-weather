@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Josefin+Sans:wght@200&family=Montserrat:wght@200&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Weather App</title>
+  </head>
+<body>
+  <div class="container">
+    <div class="weather-app">
+        <div class="overview">
+          <div class="overview-left">
+            <form class="search-form" id="search-form">
+              <div class="row g-3">
+                <div class="col search-line">
+                  <input
+                    type="search"
+                    placeholder="Type a city.."
+                    autofocus="on"
+                    autocomplete="off"
+                    id="city-input"
+                    class="form-control shadow-sm"
+                  />
+                </div>
+                <div class="col search-button">
+                  <input
+                    value="🔍" 
+                    type="button" 
+                    class="btn btn-light"
+                  />
+                </div>
+                  <div class="col current-button" id="current-button">
+                    <input
+                    value="📍"
+                    type="button" 
+                    class="btn btn-light"
+                  />
+                </div>
+              </div>
+            </form>
+               <div class="current-weather-main">
+                <div class="current-weather-icon">
+                  <img src="" alt="" width="150px" id="icon">
+                </div> 
+                  <h1> <b class="title" id="temperature" class="temperature-unit" id="temperature-unit"> </b> °C </h1> 
+                  <h2 class="status" id="description"> </h2>
+                  <h5 class="date" id="date"></h5>
+                  <h5 class="city" id="city"></h5>
+               </div>
+          </div>
+         </br>
+          <div class="overview-right">
+            <div class="scale">
+               <span href="#"  id="celsius-link"></span>
+            </div>
+            <div class="weather-forecast" id="forecast"></div>
+          </br>
+              <div class="WeatherInfo">
+                <h1 class="Today-hightlights">Today's hightlights</h1>
+                <div class="row">
+                  <div class="col-6">
+                    <ul>
+                      <li class="name-hightlights"> Wind </li>
+                      <li class="indicator"> <strong  id="wind"></strong> mph</li>
+                      </ul>
+                    </div>
+                    <div class="col-6">
+                      <ul>
+                        <li class="name-hightlights"> Humidity </li>
+                        <li class="indicator"> <strong  id="humidity"></strong> %</li>
+                        </ul>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-6">
+                      <ul>
+                        <li class="name-hightlights"> Visibility </li>
+                        <li class="indicator"> <strong  id="visibility"></strong> km</li>
+                        </ul>
+                      </div>
+                      <div class="col-6">
+                        <ul>
+                          <li class="name-hightlights"> Pressure </li>
+                          <li class="indicator"> <strong id="pressure"></strong> mb</li>
+                          </ul>
+                      </div>
+                    </div>
+                </div>
+              </br>
+                <small>
+                  <a
+                    href="https://github.com/DariaKapustenska/my-weather"
+                    target="_blank"
+                    >Open-source code</a>
+                  by Daria Kapustenska
+                </small>
+          </div>              
+    </div>
+  </div>
+  <script src="src/index.js"></script>
+</body>
+</html>
